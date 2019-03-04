@@ -460,6 +460,7 @@ SWIFT_CLASS("_TtC19SwapkeyExtensionSDK7Swapkey")
 @end
 
 @class UIInputViewController;
+@protocol UITextInput;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC19SwapkeyExtensionSDK17SwapkeyController")
@@ -470,6 +471,7 @@ SWIFT_CLASS("_TtC19SwapkeyExtensionSDK17SwapkeyController")
 - (void)updateViewConstraints;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (void)textDidChange:(id <UITextInput> _Nullable)textInput;
 - (nonnull instancetype)init;
 - (nonnull instancetype)initWithHandler:(UIInputViewController * _Nonnull)hdl OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
