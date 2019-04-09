@@ -272,6 +272,7 @@ SWIFT_CLASS("_TtC19SwapkeyExtensionSDK10NoAccessUI")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified logoSwap;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblPoweredBy;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imgLogo;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblVersion;
 - (IBAction)openApp:(id _Nonnull)sender;
 - (BOOL)openURL:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -345,6 +346,13 @@ SWIFT_CLASS("_TtC19SwapkeyExtensionSDK6SKELog")
 @end
 
 
+SWIFT_CLASS("_TtC19SwapkeyExtensionSDK11SKELogEvent")
+@interface SKELogEvent : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC19SwapkeyExtensionSDK14SKEPreferences")
 @interface SKEPreferences : NSObject
 @property (nonatomic, copy) NSString * _Nonnull bundleGroup;
@@ -393,6 +401,7 @@ SWIFT_CLASS("_TtC19SwapkeyExtensionSDK10SKEStrings")
 
 SWIFT_CLASS("_TtC19SwapkeyExtensionSDK7SKEUser")
 @interface SKEUser : NSObject
+- (void)showPayment;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
