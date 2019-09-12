@@ -231,6 +231,7 @@ SWIFT_CLASS("_TtC19SwapkeyExtensionSDK15AlphaKeyboardUI")
 @end
 
 @class UILabel;
+@class UITapGestureRecognizer;
 
 SWIFT_CLASS("_TtC19SwapkeyExtensionSDK16AmountKeyboardUI")
 @interface AmountKeyboardUI : UIView
@@ -241,10 +242,12 @@ SWIFT_CLASS("_TtC19SwapkeyExtensionSDK16AmountKeyboardUI")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btnHistory;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btnDelete;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btn0;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblAux;
 - (IBAction)showHistory:(id _Nonnull)sender;
 - (IBAction)didTapKey:(id _Nonnull)sender;
 - (IBAction)deleteAmount:(id _Nonnull)sender;
 - (IBAction)nextStep;
+- (void)longPressedWithSender:(UITapGestureRecognizer * _Nonnull)sender;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
@@ -293,6 +296,8 @@ SWIFT_CLASS("_TtC19SwapkeyExtensionSDK10NoAccessUI")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblPoweredBy;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imgLogo;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblVersion;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblAux;
+- (void)longPressedWithSender:(UITapGestureRecognizer * _Nonnull)sender;
 - (IBAction)openApp:(id _Nonnull)sender;
 - (BOOL)openURL:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -781,6 +786,7 @@ SWIFT_CLASS("_TtC19SwapkeyExtensionSDK15AlphaKeyboardUI")
 @end
 
 @class UILabel;
+@class UITapGestureRecognizer;
 
 SWIFT_CLASS("_TtC19SwapkeyExtensionSDK16AmountKeyboardUI")
 @interface AmountKeyboardUI : UIView
@@ -791,10 +797,12 @@ SWIFT_CLASS("_TtC19SwapkeyExtensionSDK16AmountKeyboardUI")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btnHistory;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btnDelete;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btn0;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblAux;
 - (IBAction)showHistory:(id _Nonnull)sender;
 - (IBAction)didTapKey:(id _Nonnull)sender;
 - (IBAction)deleteAmount:(id _Nonnull)sender;
 - (IBAction)nextStep;
+- (void)longPressedWithSender:(UITapGestureRecognizer * _Nonnull)sender;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
@@ -843,6 +851,8 @@ SWIFT_CLASS("_TtC19SwapkeyExtensionSDK10NoAccessUI")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblPoweredBy;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imgLogo;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblVersion;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblAux;
+- (void)longPressedWithSender:(UITapGestureRecognizer * _Nonnull)sender;
 - (IBAction)openApp:(id _Nonnull)sender;
 - (BOOL)openURL:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
